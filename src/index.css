@@ -1853,8 +1853,8 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .live_one {
-    top: calc(0% + 17.5rem);
-    left: calc(0% + 9rem);
+    top: calc(0% + 17rem);
+    left: calc(0% + 8.5rem);
   }
 }
 
@@ -1880,10 +1880,9 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .image_one img {
-    min-width: 390px;
-    top: calc(0% + 5px)
-  }
-  .image_one {
+    width: 380px;
+    top: calc(0% + 5px);
+    left: calc(0% + -.8rem);
     padding-left: 0rem;
   }
 }
@@ -2037,7 +2036,7 @@ scale: 1 1;
 @media screen and (max-width: 884px) {
   .live_two {
     top: calc(0% + 24.2rem);
-    left: calc(0% + 9rem);
+    left: calc(0% + 8.5rem);
   }
 }
 .live_two:hover {
@@ -2068,10 +2067,10 @@ scale: 1 1;
 
 @media screen and (max-width: 884px) {
   .image_two img {
-    width: 400px;
+    width: 380px;
     right: 0rem;
     top: calc(0% + 8rem);
-    left: 0rem;
+    left: -.25rem;
   }
 } 
 
@@ -2223,8 +2222,8 @@ scale: 1 1;
 
 @media screen and (max-width: 884px) {
   .live_three {
-    top: calc(0% + 28.2rem);
-    left: calc(0% + 9.5rem);
+    top: calc(0% + 27.9rem);
+    left: calc(0% + 9rem);
   }
 }
 
@@ -2249,8 +2248,8 @@ scale: 1 1;
 @media screen and (max-width: 884px) {
   .image_three img {
     top: calc(0% + 12rem);
-    width: 400px;
-    left: -.5rem;
+    width: 380px;
+    left: -.75rem;
   }
 }
 
