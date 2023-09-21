@@ -976,10 +976,6 @@ h1, h2, h3, h4, h5, span, p, a {
 }
 
 /* ********************* SKILLS **************************** */
-.skills {
-  display: grid;
-  position: relative;
-}
 
 .skills.show h1{
   animation: fadeIn .5s ease-in forwards;
@@ -989,6 +985,8 @@ h1, h2, h3, h4, h5, span, p, a {
   position: relative;
   text-align: center;
   font-size: 40px;
+  height: 40px;
+  padding: 0;
   top: calc(0% + 2rem);
   text-decoration: underline;
   color: rgb(67, 66, 66);
