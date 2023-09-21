@@ -1854,7 +1854,7 @@ scale: 1 1;
 @media screen and (max-width: 884px) {
   .live_one {
     top: calc(0% + 17rem);
-    left: calc(0% + 8.5rem);
+    left: calc(0% + 8.8rem);
   }
 }
 
@@ -1880,9 +1880,9 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .image_one img {
-    width: 380px;
+    width: 382px;
     top: calc(0% + 5px);
-    left: calc(0% + -.8rem);
+    left: calc(0% + -.5rem);
     padding-left: 0rem;
   }
 }
@@ -2070,7 +2070,7 @@ scale: 1 1;
     width: 380px;
     right: 0rem;
     top: calc(0% + 8rem);
-    left: -.25rem;
+    left: 0rem;
   }
 } 
 
@@ -2249,7 +2249,7 @@ scale: 1 1;
   .image_three img {
     top: calc(0% + 12rem);
     width: 380px;
-    left: -.75rem;
+    left: -.65rem;
   }
 }
 
