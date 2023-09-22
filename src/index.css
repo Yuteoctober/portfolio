@@ -2883,20 +2883,20 @@ scale: 1 1;
 
 .section_wiki {
   width: 100%;
-  height: 100vh;
+  min-height: 800px;
+  background: url('./Images/ezgif.com-reverse.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .wiki_container {
   display: flex;
   position: relative;
-  background: url('./Images/ezgif.com-reverse.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   opacity: .8;
   width: 100%;
   min-height: 100vh;
-  min-height: 700px;
+
   flex-direction: column;
   justify-content: center;
 }
