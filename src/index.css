@@ -1805,7 +1805,7 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .section_project {
-    height: 2000px;
+    height: 2100px;
   }
 }
 
@@ -1829,9 +1829,9 @@ scale: 1 1;
 @media screen and (max-width: 884px) {
   .project_one {
     gap: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -1850,11 +1850,20 @@ scale: 1 1;
   left: calc(0% + 10rem);
   top: calc(0% + 18.2rem);
   z-index: 1;
+  white-space: nowrap;
 }
 @media screen and (max-width: 884px) {
   .live_one {
     top: calc(0% + 17rem);
-    left: calc(0% + 8.8rem);
+    left: calc(0% + 9.2rem);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .live_one {
+    font-size: 14px;
+    top: 15rem;
+
   }
 }
 
@@ -1880,11 +1889,19 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .image_one img {
-    width: 382px;
+    max-width: 382px;
     top: calc(0% + 5px);
-    left: calc(0% + -.5rem);
-    padding-left: 0rem;
+    margin: 0 auto;
   }
+  .image_one {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 410px) {
+  .image_one img {
+    width: 342px;
+  }
+
 }
 
 .text_div_one {
@@ -1897,8 +1914,14 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .text_div_one{
-    width: 400px;
-    top: calc(0% + 2.5rem);
+    max-width: 400px;
+    top: calc(0% + 9rem);
+    left: 1rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .text_div_one{
+    left: 2rem;
   }
 }
 
@@ -1911,6 +1934,7 @@ scale: 1 1;
   text-align: left;
   font-size: 30px;
   top: calc(0% + 5rem);
+  white-space: nowrap;
   opacity: 0;
 
 }
@@ -1952,12 +1976,27 @@ scale: 1 1;
   line-height: 1.2em;
   opacity: 0;
 }
+
+@media screen and (max-width: 920px) {
+  .p_context_one {
+    min-width: 380px;
+  }
+}
+
 .text_div_one.show .p_context_one {
   animation: rightToOriginal .5s ease-in 1.2s forwards;
 }
 @media screen and (max-width: 920px) {
   .text_div_one p{
     font-size: 14px
+  }
+}
+@media screen and (max-width: 410px) {
+  .text_div_one p {
+    font-size: 13px;
+  }
+  .p_context_one {
+    min-width: 350px;
   }
 }
 
@@ -1985,11 +2024,7 @@ scale: 1 1;
 .text_div_one.show .who_did {
   animation: rightToOriginal .5s ease-in 1s forwards;
 }
-@media screen and (max-width: 920px) {
-  .p_context_one {
-    width: 400px;
-  }
-}
+
 .used_lang {
   display: flex;
   position: relative;
@@ -2035,10 +2070,20 @@ scale: 1 1;
 
 @media screen and (max-width: 884px) {
   .live_two {
-    top: calc(0% + 24.2rem);
-    left: calc(0% + 8.5rem);
+    top: calc(0% + 17rem);
+    left: calc(0% + 8.8rem);
   }
 }
+
+@media screen and (max-width: 410px) {
+  .live_two {
+    font-size: 14px;
+    top: 15rem;
+    left: 8.8rem;
+
+  }
+}
+
 .live_two:hover {
   background-color: #343791;
 }
@@ -2068,11 +2113,20 @@ scale: 1 1;
 @media screen and (max-width: 884px) {
   .image_two img {
     width: 380px;
-    right: 0rem;
-    top: calc(0% + 8rem);
-    left: 0rem;
+    margin: 0 auto;
+  }
+  .image_two {
+    width: 400px;
+    margin: 0 auto;
+    top: calc(0% + 12rem);
   }
 } 
+@media screen and (max-width: 410px) {
+  .image_two img{
+    width: 343px;
+    margin: 0 auto;
+  }
+}
 
 .who_did_two {
   position: relative;
@@ -2101,9 +2155,15 @@ scale: 1 1;
 }
 @media screen and (max-width: 884px) {
   .text_div_two{
-    width: 400px;
-    top: calc(0% + 7rem);
-    padding-left: 0rem;
+    width: 370px;
+    top: calc(0% + 16rem);
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .text_div_two {
+    width: 350px;
+    left: 1rem;
   }
 }
 
@@ -2152,6 +2212,13 @@ scale: 1 1;
   }
 }
 
+@media screen and (max-width: 410px) {
+  .text_div_two p {
+    font-size: 13px;
+  }
+  
+}
+
 .btm_line_project_two{
   position: relative;
   height: 0;
@@ -2177,8 +2244,15 @@ scale: 1 1;
 @media screen and (max-width: 920px) {
   .p_context_two {
     width: 400px;
+
   }
 }
+@media screen and (max-width: 410px) {
+  .p_context_two {
+    width: 350px;
+  }
+}
+
 .used_lang_two {
   display: flex;
   position: relative;
@@ -2193,6 +2267,11 @@ scale: 1 1;
 @media screen and (max-width: 884px) {
   .used_lang_two {
     margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .used_lang_two {
+    margin-top: 0rem;
   }
 }
 .used_lang_two span{
@@ -2222,8 +2301,16 @@ scale: 1 1;
 
 @media screen and (max-width: 884px) {
   .live_three {
-    top: calc(0% + 27.9rem);
+    top: calc(0% + 16.5rem);
     left: calc(0% + 9rem);
+  }
+}
+@media screen and (max-width: 410px) {
+  .live_three {
+    font-size: 14px;
+    top: 15rem;
+    left: 9.3rem;
+
   }
 }
 
@@ -2245,11 +2332,23 @@ scale: 1 1;
   top: 5%;
   border: 10px solid rgb(234, 132, 114);
 }
+
 @media screen and (max-width: 884px) {
   .image_three img {
-    top: calc(0% + 12rem);
     width: 380px;
-    left: -.65rem;
+    margin: 0 auto;
+    left: -.5rem;
+  }
+  .image_three {
+    width: 400px;
+    margin: 0 auto;
+    top: calc(0% + 19rem);
+  }
+} 
+@media screen and (max-width: 410px) {
+  .image_three img{
+    width: 343px;
+    margin: 0 auto;
   }
 }
 
@@ -2282,10 +2381,18 @@ scale: 1 1;
 
 @media screen and (max-width: 884px) {
   .text_div_three{
-    width: 400px;
-    top: calc(0% + 18rem);
+    width: 390px;
+    top: calc(0% + 31rem);
+    padding-left: 1rem;
   }
 }
+@media screen and (max-width: 410px) {
+  .text_div_three {
+    width: 350px;
+    padding-left: 2rem;
+  }
+}
+
 
 .text_div_three.show {
   animation: rightToOriginal 0.5s ease-in forwards;
@@ -2347,8 +2454,7 @@ scale: 1 1;
     font-size: 14px
   }
 }
-@media screen and (max-width: 884px) {
-}
+
 
 .btm_line_project{
   position: relative;
@@ -2366,22 +2472,27 @@ scale: 1 1;
   font-size: 15px;
   top: 20%;
   line-height: 1.2em;
-  opacity: 0;
+  opacity: 0; 
+  color: rgb(72, 69, 69);
+  width: 400px;
 }
 .text_div_three.show .p_context_three {
   animation: rightToOriginal 0.5s ease-in 1.2s forwards;
 }
 
-.p_context_three {
-  position: relative;
-  width: 400px;
-  color: rgb(72, 69, 69) !important;
-}
 @media screen and (max-width: 920px) {
   .p_context_three {
+    font-size: 14px;
     width: 400px;
   }
 }
+@media screen and (max-width: 410px) {
+  .p_context_three {
+    width: 350px;
+    font-size: 13px !important;
+  }
+}
+
 .used_lang_three {
   display: flex;
   position: relative;
