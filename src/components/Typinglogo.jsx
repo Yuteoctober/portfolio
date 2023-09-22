@@ -8,7 +8,6 @@ function Typinglogo() {
   const [part, setPart] = useState('');
 
   const words = [
-    'Software Engineer.',
     'Front-end,',
     'Web Developer.'
   ]
@@ -61,7 +60,7 @@ function Typinglogo() {
     <div className='logo_main_container'> 
       <div className='h1_div'>
         <h1>console.log("Hi!🙋‍♂️")</h1>
-        <h3>My name is Yute, I am <span>{part}</span></h3>
+        <h3>My name is Yute, I am a <span>{part}</span></h3>
         <div className='learn_more'>
           <a href="#aboutme">Learn more</a>
         </div>
