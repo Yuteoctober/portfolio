@@ -61,7 +61,7 @@ function Weather() {
               < BsSearch className="search_icon" />
             </div>
           )}
-             {error?<p>*Inccorect city</p>: null}
+             {error?<p>inccorect city</p>: null}
           </div>
           <div className="weather_container">
             <div className="text_top">
