@@ -574,8 +574,7 @@ h1, h2, h3, h4, h5, span, p, a {
   color: #d7d0d0;
   font-size: 35px;
   opacity: 0;
-  width: 400px;
-  animation: Slidefromleft .5s ease-in .5s forwards;
+  animation: Slidefromleft .7s ease-in .5s forwards;
 }
 
 .h1_div h3 {
@@ -584,7 +583,7 @@ h1, h2, h3, h4, h5, span, p, a {
   top: -4%;
   font-size: 20px;
   opacity: 0;
-  animation: Slidefromleft .6s ease-in .7s forwards;
+  animation: Slidefromleft .7s ease-in .7s forwards;
 }
 .typing_part {
   color: #bcea52;
@@ -624,6 +623,7 @@ h1, h2, h3, h4, h5, span, p, a {
 @media screen and (max-width: 600px) {
   .learn_more {
     top: 10rem;
+    width: 90px;
   }
 }
 
@@ -633,6 +633,11 @@ h1, h2, h3, h4, h5, span, p, a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px){
+  .learn_more a {
+    font-size: 13.5px;
+  }
+}
 .learn_more::after {
   content: '';
   position: absolute;
