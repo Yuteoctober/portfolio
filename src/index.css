@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, span, p, a {
 }
 
 
+
 @keyframes SlideBgLeft {
   0% {
     transform: translateX(-100%);
@@ -573,7 +574,8 @@ h1, h2, h3, h4, h5, span, p, a {
   color: #d7d0d0;
   font-size: 35px;
   opacity: 0;
-  animation: Slidefromleft .9s ease-in .2s forwards;
+  width: 400px;
+  animation: Slidefromleft .5s ease-in .5s forwards;
 }
 
 .h1_div h3 {
@@ -582,9 +584,9 @@ h1, h2, h3, h4, h5, span, p, a {
   top: -4%;
   font-size: 20px;
   opacity: 0;
-  animation: Slidefromleft .9s ease-in .7s forwards;
+  animation: Slidefromleft .6s ease-in .7s forwards;
 }
-.h1_div span{
+.typing_part {
   color: #bcea52;
 }
 
@@ -617,7 +619,7 @@ h1, h2, h3, h4, h5, span, p, a {
   isolation: isolate;
   cursor: pointer;
   opacity: 0;
-  animation: fadeIn 1s ease-in 1.5s forwards;
+  animation: fadeIn .7s ease-in 1s forwards;
 }
 @media screen and (max-width: 600px) {
   .learn_more {
