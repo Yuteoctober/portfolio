@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, span, p, a {
   right: calc(0% + -28px);
   top: calc(0% + -12.5px);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.493);
+  background: rgba(255, 255, 255, 0.721);
   box-shadow: 5px 5px 10px hsl(210, 2%, 22%);
   width: 88px;
   height: 2000px;
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, span, p, a {
 .section_Typinglogo::before{
   content: '';
   background: url('./Images/rain.gif') center/cover;
-  opacity: .92;
+  opacity: .97;
   position: absolute;
   width: 100%;
   height:100%;
@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5, span, p, a {
   opacity: 0;
   animation: Slidefromleft .7s ease-in .7s forwards;
 }
-.typing_part {
+.h1_div span {
   color: #bcea52;
 }
 
@@ -2578,8 +2578,8 @@ scale: 1 1;
   height: 100px;
   width: 180px;
   position: relative;
-  margin-bottom: 2rem;
-  left: -.5rem;
+  margin-bottom: 1rem;
+  left: -.0rem;
   top:calc(0% + 4rem);
   align-items: center;
 }
