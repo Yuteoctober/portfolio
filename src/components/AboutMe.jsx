@@ -41,7 +41,7 @@ function AboutMe() {
               and where my skills can make a meaningful impact.
               </p>
           </div>
-          <a className="resume_a" href="https://drive.google.com/file/d/1_1QRp7AysmN2KqPA7Z1dsCfN-T2xzLoa/view?usp=sharing">
+          <a className="resume_a" href="https://drive.google.com/file/d/1XNn23UA2L82P2__Ccuccl3WMdR2rHG57/view?usp=sharing">
             <button className="cv">My Resume</button>
           </a>
         </section>
