@@ -613,8 +613,10 @@ h1, h2, h3, h4, h5, span, p, a {
   top: calc(0% + 11rem);
   left: calc(0% + 1.5rem);
   word-spacing: 2px;
-  background: hsla(180, 1%, 29%, 0.829); 
-  border: 2px solid hsla(180, 1%, 29%, 0.829);
+  background: hsla(180, 1%, 29%, 0.354); 
+  border: 2px solid hsla(180, 2%, 23%, 0.406);
+  border-radius: .2rem;
+  backdrop-filter: blur(2px);
   isolation: isolate;
   cursor: pointer;
   opacity: 0;
@@ -629,13 +631,13 @@ h1, h2, h3, h4, h5, span, p, a {
 
 .learn_more a {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
 }
 
 @media screen and (max-width: 600px){
   .learn_more a {
-    font-size: 13.5px;
+    font-size: 13px;
   }
 }
 .learn_more::after {
@@ -645,6 +647,7 @@ h1, h2, h3, h4, h5, span, p, a {
   background: hsla(180, 4%, 73%, 0.829);
   inset: 0;
   scale: 0 1;
+  border-radius: .2rem;
   transform-origin: right;
   transition: scale .3s;
 }
@@ -1038,6 +1041,10 @@ h1, h2, h3, h4, h5, span, p, a {
 }
 .skills_container img {
   width: 100px;
+}
+
+.skills_container img:hover {
+  animation: btnClickFadeOut .5s cubic-bezier(.04,.04,.97,1.01);
 }
 
 .html_skill img {
