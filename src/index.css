@@ -2613,7 +2613,7 @@ scale: 1 1;
 
 @media screen and (max-width: 884px) {
   .live_four {
-    top: calc(0% + 16.7rem);
+    top: calc(0% + 16rem);
     left: calc(0% + 8.8rem);
   }
 }
