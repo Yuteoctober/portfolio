@@ -1424,8 +1424,7 @@ h1, h2, h3, h4, h5, span, p, a {
 }
 
 .about_me_part_one span {
-  font-size: 30px;
-  letter-spacing: -1px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -3182,10 +3181,7 @@ scale: 1 1;
 .section_wiki {
   width: 100%;
   min-height: 800px;
-  background: url('./Images/pattern.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #d5d5d588;
 }
 
 .wiki_container {

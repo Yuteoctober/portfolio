@@ -35,7 +35,7 @@ function AboutMe() {
               web projects that engage, inform, and delight users.
               </p>
           </div>
-          <a className="resume_a" href="https://drive.google.com/file/d/1XNn23UA2L82P2__Ccuccl3WMdR2rHG57/view?usp=sharing">
+          <a className="resume_a" href="https://drive.google.com/file/d/1XNn23UA2L82P2__Ccuccl3WMdR2rHG57/view?usp=sharing" target="_blank" rel="noreferrer">
             <button className="cv">My Resume</button>
           </a>
         </section>

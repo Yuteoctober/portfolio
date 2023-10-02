@@ -54,7 +54,7 @@ function ProjectNew() {
         <div className="project_one">
           <div className='image_one'>
               <div className="live_one">
-                <Link to="/TodoList">
+                <Link to="/TodoList" target="_blank">
                   <span>View Project</span>
                 </Link>
               </div>
@@ -78,7 +78,7 @@ function ProjectNew() {
             {/* **************** 2 *********************** */}
           <div className="image_two">
               <div className="live_two">
-                <Link to="/Weather">
+                <Link to="/Weather" target="_blank">
                   <span>View Project</span>
                 </Link>
               </div>
@@ -103,7 +103,7 @@ function ProjectNew() {
           {/* ****************** 3 ************** */}
           <div className="image_three">
               <div className="live_three">
-                <Link to="/Wikipedia">
+                <Link to="/Wikipedia" target="_blank">
                   <span>View Project</span>
                 </Link>
               </div>
@@ -127,7 +127,7 @@ function ProjectNew() {
           {/* **************** 4 *********************** */}
           <div className="image_four">
               <div className="live_four">
-                  <a href='https://yuteoctober.github.io/typingGame/'>View Project</a>
+                  <a href='https://yuteoctober.github.io/typingGame/' target="_blank" rel="noreferrer">View Project</a>
               </div>
             <img 
               onMouseEnter={() => SetHover(true)}
