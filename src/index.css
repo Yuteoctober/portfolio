@@ -427,7 +427,7 @@ h1, h2, h3, h4, h5, span, p, a {
   color: rgb(55, 54, 54);
   animation: Slidefromleft 0.4s ease-in;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 884px) {
   .list_x {
     left: -1px;
   }
@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, span, p, a {
   opacity: 0;
   
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 884px) {
   .side_tap {
     width: 88px;
   }
@@ -504,7 +504,7 @@ h1, h2, h3, h4, h5, span, p, a {
   padding: 2px 0px;
   border-radius: .5rem;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 884px) {
   .link {
     width: 40%;
     text-align: center;
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, span, p, a {
   left: 10px;
   z-index: 3;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 884px) {
   .link a {
     left: 0;
     
@@ -541,7 +541,7 @@ h1, h2, h3, h4, h5, span, p, a {
   bottom: 5px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 884px) {
   .link span {
     display: none;
   }
