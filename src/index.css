@@ -2598,7 +2598,7 @@ scale: 1 1;
 
 .live_four a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .live_four {
@@ -2871,7 +2871,7 @@ scale: 1 1;
   position: relative;
   margin-bottom: 1rem;
   left: -.0rem;
-  top:calc(0% + 4rem);
+  top:calc(0% + 7rem);
   align-items: center;
 }
 
@@ -2893,9 +2893,9 @@ scale: 1 1;
   padding: 5px;
   font-size: 18px;
   border-radius: 50%;
-  background-color: rgba(190, 185, 185, 0.479);
+  background-color: rgba(255, 255, 255, 0.689);
   backdrop-filter: blur(10px);
-  color: rgb(91, 87, 87);
+  color: rgba(18, 18, 18, 0.877);
   cursor: pointer;
   z-index: 1;
   animation: fadeIn2 2s ease-in;
@@ -2920,7 +2920,7 @@ scale: 1 1;
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: center;
-  border: 2px solid rgba(255, 255, 255, 0.854);
+  border: 3px solid rgba(255, 255, 255, 0.854);
   border-radius: 20px;
   backdrop-filter: blur(3px);
   background: rgba(116, 112, 112, 0.221);
@@ -2932,7 +2932,7 @@ scale: 1 1;
 .search input::placeholder {
   text-align: center;
   font-size: 14px;
-  color: rgb(239, 231, 231);
+  color: rgb(255, 255, 255);
 }
 
 .search input:focus,

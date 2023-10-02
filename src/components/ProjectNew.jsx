@@ -127,7 +127,7 @@ function ProjectNew() {
           {/* **************** 4 *********************** */}
           <div className="image_four">
               <div className="live_four">
-                  <span href='https://yuteoctober.github.io/typingGame/'>View Project</span>
+                  <a href='https://yuteoctober.github.io/typingGame/'>View Project</a>
               </div>
             <img 
               onMouseEnter={() => SetHover(true)}
