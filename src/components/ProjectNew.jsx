@@ -54,7 +54,7 @@ function ProjectNew() {
         <div className="project_one">
           <div className='image_one'>
               <div className="live_one">
-                <Link to="/TodoList" target={'_blank'} rel='noopener noreferrer'>
+                <Link to="/TodoList">
                   <span>View Project</span>
                 </Link>
               </div>
@@ -78,7 +78,7 @@ function ProjectNew() {
             {/* **************** 2 *********************** */}
           <div className="image_two">
               <div className="live_two">
-                <Link to="/Weather" target={'_blank'} rel='noopener noreferrer'>
+                <Link to="/Weather">
                   <span>View Project</span>
                 </Link>
               </div>
@@ -103,7 +103,7 @@ function ProjectNew() {
           {/* ****************** 3 ************** */}
           <div className="image_three">
               <div className="live_three">
-                <Link to="/Wikipedia" target={'_blank'} rel='noopener noreferrer'>
+                <Link to="/Wikipedia">
                   <span>View Project</span>
                 </Link>
               </div>
