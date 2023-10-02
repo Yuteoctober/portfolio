@@ -22,17 +22,17 @@ function Sidebar() {
             {!show? (
             <BsList className='list'/>
             ) : (
-              <BiSolidArrowToRight className='list_x'/>
+              <div className='listx_div'><BiSolidArrowToRight className='list_x'/></div>
             ) }     
           </div>
           <div id='side_bar'
             className={`side_tap ${show? 'show' : 'hide'}`}>
             <div className='link_sidetap'>
             <div className="linebreak_side_tap"></div>
-              <a onClick={() => setShow(false)}className='link_home' href='#section_typinglogo'><BiHome className='sidetap_home'/></a>
-              <a onClick={() => setShow(false)}className='link_three' href="#section_vscode"><BiBook className='sidetap_project'/></a>
-              <a onClick={() => setShow(false)}className='link_three' href="#aboutme"><BiUser className='sidetap_home'/></a>
-              <a onClick={() => setShow(false)}className='link_three' href="#section_project_new"><BiGridAlt className='sidetap_project'/></a>       
+              <div className='link'><a className='link_home' href='#section_typinglogo'><BiHome className='sidetap_home'/><span>Home</span></a></div>
+              <div className='link'><a className='link_three' href="#section_vscode"><BiBook className='sidetap_project'/><span>Skill</span></a></div>
+              <div className='link'><a className='link_three' href="#aboutme"><BiUser className='sidetap_home'/><span>About</span></a></div>
+              <div className='link'><a className='link_three' href="#section_project_new"><BiGridAlt className='sidetap_project'/><span>Project</span></a></div>       
             </div>
           </div>         
         </div>

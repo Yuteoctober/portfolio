@@ -9,7 +9,7 @@ function Typinglogo() {
 
   const words = [
     'Front-end,',
-    'Web Developer.'
+    'Developer.'
   ]
 
 
