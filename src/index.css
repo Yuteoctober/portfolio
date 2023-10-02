@@ -2606,7 +2606,7 @@ scale: 1 1;
   padding: 5px 10px;
   background: #a1dbba;
   left: calc(0% + 9.5rem);
-  top: calc(0% + 17.5rem);
+  top: calc(0% + 17rem);
   cursor: pointer;
   z-index: 1;
 }
