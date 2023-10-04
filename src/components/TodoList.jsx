@@ -118,6 +118,9 @@ function TodoList() {
                         onDragStart={() => dragItem.current = index}
                         onDragEnter={()=> dragOverItem.current = index}
                         onDragEnd={handleSort}   
+                        onTouchEnd={handleSort}
+                        onTouchStart={() => dragItem.current = index}
+                        onTouchMove={() => dragOverItem.current = index}
                         onDragOver={(e) => e.preventDefault()}
                         >
                         {editMode[index] && (
@@ -139,7 +142,7 @@ function TodoList() {
                     </div>
                      )) }
                     </div>
-                    <p className='reserve_todolist'>Made with ❤️‍ by Yute 2023</p>
+                    <p className='reserve_todolist'>Made with ❤️‍ by Yute</p>
                 </div> 
                 
             </section>
