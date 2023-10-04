@@ -605,6 +605,7 @@ h1, h2, h3, h4, h5, span, p, a {
   border-radius: 1rem;
   padding: 1.5rem;
   padding-top: 1rem;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 
