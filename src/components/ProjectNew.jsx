@@ -136,7 +136,7 @@ function ProjectNew() {
               alt="typingGame" />
           </div>
           <div className={`text_div_four ${isVisible4? 'show':''}`} ref={ref4}>
-            <h1>Typing Game</h1>
+            <h1>Typing Practice</h1>
             <div className='btm_line_project_four'></div>
             <p className="p_context_four">TypeIsFun is an interactive typing practice application designed to enhance your typing skills. It offers a range of features, including timed challenges, dynamic themes, and result analysis. Enjoy a seamless typing experience and share your achievements on Twitter.</p>
             <div className="used_lang_four">
