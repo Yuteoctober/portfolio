@@ -83,6 +83,11 @@ function SignIn() {
             const result = await signInWithPopup(auth, provider);
             const user = result.user;
             console.log('Signed in with Google:', user);
+            setLoginPage(true)
+            setSignInEmail('')
+            setSignInPassword('')
+            setSignUpEmail('')
+            setSignUpPassword('')
         } catch (error) {
             console.error('Error signing in with Google:', error);
         }
