@@ -77,18 +77,16 @@ function SignIn() {
         })
     }
 
-    function signInWithGoogle() {
+    async function signInWithGoogle() {
         const provider = new GoogleAuthProvider();
-        signInWithPopup(auth, provider)
-        .then((result) => {
-            const user = result.user
-            console.log('Signed in with Google:', user)
-        })
-        .catch((error) => {
-            console.error('Error signing in with Google:', error)
-        })
+        try {
+            const result = await signInWithPopup(auth, provider);
+            const user = result.user;
+            console.log('Signed in with Google:', user);
+        } catch (error) {
+            console.error('Error signing in with Google:', error);
+        }
     }
-
   return (
     <section className='section_login'>
      <div className='login_status'>
