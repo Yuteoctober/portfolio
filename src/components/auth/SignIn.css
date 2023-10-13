@@ -26,8 +26,8 @@
     margin-top: -5rem;
     width: 80%;
     height: 430px;
-    background: rgba(255, 255, 255, 0.311);
-    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.073);
+    backdrop-filter: blur(5px);
     left: 50%;
     transform: translate(-50%, 50%);
     border: 2px solid rgb(255, 255, 255);

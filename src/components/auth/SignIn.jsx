@@ -26,7 +26,6 @@ function SignIn() {
             setSignInPassword('')
         }).catch((error) => {
             console.log(error)
-            alert('Please check your email and password')
         })
     }
 
@@ -43,7 +42,8 @@ function SignIn() {
     }
 
     function userSignOut() { // sign out
-        signOut(auth).then(() => {
+        signOut(auth)
+        .then(() => {
             console.log('signout seccessful')
         }).catch(error => console.log(error))
     }
@@ -64,9 +64,7 @@ function SignIn() {
     }, [])
 
     function forgotPassword(signInEmail) { //forget password
-        if(signInEmail.length === 0) {
-            alert('Please enter your email')
-        }
+
         sendPasswordResetEmail(auth, signInEmail)
         .then(() => {
             alert('Password reset email sent. Check your email.')
@@ -74,6 +72,7 @@ function SignIn() {
         })
         .catch((error) => {
             console.error('Error sending password reset email:', error)
+            alert('Please enter your email')
         })
     }
 
