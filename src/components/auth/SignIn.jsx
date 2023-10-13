@@ -169,7 +169,7 @@ function SignIn() {
         </div>
         <div className='profile_text'>
           <TypeAnimation
-            style={{ whiteSpace: 'pre-line', height: '195px', display: 'block', fontSize: '1.3em', textAlign: 'center', color: 'white' }}
+            style={{ whiteSpace: 'pre-line', height: '195px', display: 'block', fontSize: '1.1em', textAlign: 'center', color: 'white' }}
             sequence={[
             `Hello, there!
             \nThank you for taking the time to visit my project.
