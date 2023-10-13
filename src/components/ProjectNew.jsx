@@ -167,7 +167,7 @@ function ProjectNew() {
             <p className="p_context_five">User Authentication system built with React and Firebase. This project caters to a wide array of user needs, providing the functionality to sign in, register new accounts, reset forgotten passwords, and even offers the convenience of Google-based authentication.</p>
             <div className="used_lang_five">
               <span>react</span>
-              <span>javascript</span>
+              <span>js</span>
               <span>css</span>
               <span>Firebase</span>
               <span>Authentication</span>
