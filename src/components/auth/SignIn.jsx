@@ -15,7 +15,7 @@ function SignIn() {
     const [signUpEmail, setSignUpEmail] = useState('')
     const [signUpPassword, setSignUpPassword] = useState('')
     const [authUser, SetAuthUser] = useState(null)
-    const [loginPage, setLoginPage] = useState(false)
+    const [loginPage, setLoginPage] = useState(true)
 
     function signIn(e) { // Sign in
         e.preventDefault();
