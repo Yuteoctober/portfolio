@@ -6,6 +6,11 @@ import { useState, useEffect } from "react"
 import { auth } from './FirebaseAuth'
 import './SignIn.css'
 import google from '../auth/google.png'
+import pikachu from '../auth/wave-cute.gif'
+import { TypeAnimation } from 'react-type-animation';
+
+
+
 
  
 function SignIn() {
@@ -16,6 +21,8 @@ function SignIn() {
     const [signUpPassword, setSignUpPassword] = useState('')
     const [authUser, SetAuthUser] = useState(null)
     const [loginPage, setLoginPage] = useState(true)
+    const [signupPage, setSignupPage] = useState(false)
+    const [profilePage, setProfilePage] = useState(false)
 
     function signIn(e) { // Sign in
         e.preventDefault();
@@ -24,6 +31,9 @@ function SignIn() {
             console.log(useCredential)
             setSignInEmail('')
             setSignInPassword('')
+            setLoginPage(false)
+            setSignupPage(false)
+            setProfilePage(true)
         }).catch((error) => {
             console.log(error)
         })
@@ -34,8 +44,11 @@ function SignIn() {
         createUserWithEmailAndPassword(auth, signUpEmail , signUpPassword)
         .then((useCredential) => {
             console.log(useCredential)
+            alert('Register sucessful')
             setSignUpEmail('')
             setSignUpPassword('')
+            setSignupPage(false)
+            setLoginPage(true)
         }).catch((error) => {
             console.log(error)
         })
@@ -45,6 +58,9 @@ function SignIn() {
         signOut(auth)
         .then(() => {
             console.log('signout seccessful')
+            setProfilePage(false)
+            setLoginPage(true)
+            setSignupPage(false)
         }).catch(error => console.log(error))
     }
 
@@ -82,11 +98,13 @@ function SignIn() {
             const result = await signInWithPopup(auth, provider);
             const user = result.user;
             console.log('Signed in with Google:', user);
-            setLoginPage(true)
             setSignInEmail('')
             setSignInPassword('')
             setSignUpEmail('')
             setSignUpPassword('')
+            setLoginPage(false)
+            setSignupPage(false)
+            setProfilePage(true)
         } catch (error) {
             console.error('Error signing in with Google:', error);
         }
@@ -103,7 +121,7 @@ function SignIn() {
       <p className='signout_two'>Signed Out</p>}
      </div>
      <div className='sign_in_container'>
-      {loginPage? (
+      {loginPage && (
         <form onSubmit={signIn}>
             <h2>Login</h2>
                 <input className='input_login_email'
@@ -124,7 +142,7 @@ function SignIn() {
             <button className='google_signin_btn' onClick={signInWithGoogle}><img src={google} alt="google" /> Sign in with Google</button>
             <p onClick={() => setLoginPage(false)} className='register'>Don't have an account? <span>Register</span></p>
         </form>
-      ):(
+      )} {signupPage && (
         <form onSubmit={signUp}>
         <h2>Sign Up</h2>
         <p onClick={() => setLoginPage(true)} className='already_member'>Already a member? <span>Login</span></p>
@@ -144,6 +162,29 @@ function SignIn() {
             <img onClick={signInWithGoogle} className='google_signup' src={google} alt="google" />
       </form>
       )}  
+      {profilePage && (   
+        <>
+        <div className='circle_profile'>
+            <img className='waving' src={pikachu} alt="pikachu" />
+        </div>
+        <div className='profile_text'>
+          <TypeAnimation
+            style={{ whiteSpace: 'pre-line', height: '195px', display: 'block', fontSize: '1.3em', textAlign: 'center', color: 'white' }}
+            sequence={[
+            `Hello, there!
+            \nThank you for taking the time to visit my project.
+            \nIf you find my work interesting and would like to get in touch,
+            \nplease don't hesitate to contact me. 
+            `,
+            700,
+            '',
+            ]}
+            deletionSpeed={98}
+            repeat={Infinity}
+          />
+      </div>
+      </>
+      )}
      </div>
     </section>
   )

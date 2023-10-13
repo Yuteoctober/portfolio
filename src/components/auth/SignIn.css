@@ -243,3 +243,31 @@
 .login_status button:hover {
     background: rgb(69, 121, 89);
 }
+
+.circle_profile {
+    position: relative;
+    width: 145px;
+    height: 145px;
+    top: 1rem;
+    border-radius: 50%;
+    background: rgba(239, 234, 102, 0.701);
+    backdrop-filter: blur(10px);
+}
+
+.circle_profile img{
+    position: absolute;
+    width: 130px;
+    top: .0rem;
+    left: .4rem;
+}
+
+.profile_text {
+    position: absolute;
+    width: 85%;
+    background: rgba(190, 188, 188, 0.215);
+    backdrop-filter: blur(10px);
+    left: 50%;
+    padding: 10px 10px;
+    border-radius: 1rem;
+    transform: translate(-50%, 12rem);
+}
