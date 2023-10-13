@@ -1,0 +1,244 @@
+
+.section_login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+}
+
+.section_login::before {
+    content: '';
+    background: url('./forest.jpg') center/cover;
+    opacity: .95;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sign_in_container {
+    display: grid;
+    position: relative;
+    max-width: 550px;
+    min-width: 450px;
+    width: 35%;
+    height: 430px;
+    background: rgba(255, 255, 255, 0.311);
+    backdrop-filter: blur(7px);
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.sign_in_container h2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.sign_in_container form {
+    display: grid;
+    position: relative;
+    width: 23vw;
+    max-width: 400px;
+    min-width: 220px;
+    height: 200px;
+    top: 2rem;
+}
+
+.sign_in_container input {
+    border: none;
+    font-size: 15px;
+    width: 96%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.288);
+    backdrop-filter: blur(8px);
+    color: rgb(95, 95, 95);
+    padding: 5px 0px;
+    border-radius:.5rem;
+    padding-left: 10px;
+}
+
+.sign_in_container input:focus {
+    border: none;
+    outline: none;
+}
+
+.sign_in_container .input_login_email{
+    margin-bottom: 1.5rem;
+}
+
+.forget_password {
+    position: absolute;
+    color: rgb(7, 7, 7);
+    right: .5rem;
+    bottom: -1.4rem;
+    cursor: pointer;
+}
+
+.forget_password:hover {
+    color: white;
+}
+
+.login_btn {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    padding: 8px 0px;
+    border-radius:.3rem;
+    border: none;
+    color: white;
+    background: rgba(45, 138, 55, 0.852);
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    background-color: rgba(48, 109, 55, 0.852);
+}
+
+.google_signin_btn {
+    position: relative;     
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 0px;
+    border-radius:.3rem;
+    border: none;
+    color: white;
+    background: rgba(53, 101, 244, 0.833);
+    cursor: pointer;
+}
+
+.google_signin_btn img{
+    position: relative;
+    width: 16px;
+    left: -.5rem;
+    bottom: -.15rem;
+}
+
+.google_signin_btn:hover {
+    background: rgba(57, 91, 193, 0.817);
+}
+
+
+.register {
+    text-align: center;
+    margin-top: 1.3rem;
+    color: rgb(7, 7, 7);
+}
+
+.register span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register span:hover {
+    color: white;
+}
+
+/* -------------------- Sign UP ----------------------- */
+
+.already_member {
+    position: relative;
+    font-size: 14px;
+    top: -1.8rem;
+    color: rgb(7, 7, 7);
+    text-align: center;
+}
+.already_member span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.already_member span:hover {
+    color: white;
+}
+
+.input_sign_up_email {
+    position: relative;
+    margin-top: -.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.signup_btn {
+    position: relative;
+    margin-top: 1.7rem;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    padding: 8px 0px;
+    border-radius:.3rem;
+    border: none;
+    color: white;
+    background: rgba(45, 138, 55, 0.852);
+    cursor: pointer;
+}
+
+.signup_btn:hover {
+    background-color: rgba(48, 109, 55, 0.852);
+}
+
+.or {
+    display: grid;
+    position: relative;
+    top: 1.3rem;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    gap: .5rem;
+    text-align: center;
+    white-space: nowrap;
+    color: rgb(7, 7, 7);
+}
+
+.or::before, .or::after {
+    content: '';
+    height: 1px;
+    background-color: rgb(7, 7, 7);
+    display: block;
+}
+
+.google_signup {
+    position: relative;
+    margin: 0 auto;
+    top: 2.5rem;
+    padding: 2px;
+    width: 28px;
+    cursor: pointer;
+}
+
+.login_status {
+    display: flex;
+    position: relative;
+    font-size: 14.5px;
+    top: 44rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: .8rem;
+}
+
+.login_status button{
+    position: relative;
+    height: 20px;
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    background: rgb(87, 152, 112);
+    cursor: pointer;
+
+}
+
+.login_status button:hover {
+    background: rgb(69, 121, 89);
+}

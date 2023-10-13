@@ -6,6 +6,7 @@ import WikipediaImage from '../Images/wikiscreen.png'
 import typingGame from '../Images/typing_game.png'
 import { Link } from 'react-router-dom';
 import { useInView } from "react-intersection-observer";
+import signin from '../Images/login.png'
 
 function ProjectNew() {
 
@@ -144,6 +145,32 @@ function ProjectNew() {
               <span>javascript</span>
               <span>css</span>
               <span>api</span>
+            </div>
+          </div>
+
+          {/* ****************** 5 ************** */}
+          <div className="image_five">
+              <div className="live_five" >
+                <Link to="/SignIn" target="_blank" rel="noopener noreferrer">
+                  <span>View Project</span>
+                </Link>
+              </div>
+            <img 
+            onMouseEnter={() => SetHover(true)}
+            onMouseLeave={() => SetHover(false)}
+            src={signin} 
+            alt="signin" />
+          </div>
+          <div className={`text_div_five ${isVisible3? 'show':''}`} ref={ref3}>
+            <h1>User-Authentication</h1>
+            <div className='btm_line_project_five'></div>
+            <p className="p_context_five">User Authentication system built with React and Firebase. This project caters to a wide array of user needs, providing the functionality to sign in, register new accounts, reset forgotten passwords, and even offers the convenience of Google-based authentication.</p>
+            <div className="used_lang_five">
+              <span>react</span>
+              <span>javascript</span>
+              <span>css</span>
+              <span>Firebase</span>
+              <span>Authentication</span>
             </div>
           </div>
 

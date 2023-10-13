@@ -388,6 +388,7 @@ h1, h2, h3, h4, h5, span, p, a {
   caret-color: transparent;
 }
 
+
 .container_list {
   position: absolute;
   width: 30px;
@@ -601,7 +602,6 @@ h1, h2, h3, h4, h5, span, p, a {
   height: 200px;
   top: calc(0% + 9rem);
   backdrop-filter: blur(8px);
-  border: 1px rgba(50, 50, 50, 0.258) solid;
   border-radius: 1rem;
   padding: 1.5rem;
   padding-top: 1rem;
@@ -1863,12 +1863,12 @@ scale: 1 1;
   position: relative;
   justify-content: center;
   width: 100%;
-  height: 1450px;
+  height: 1700px;
   background-color: #e6e6e6;
 }
 @media screen and (max-width: 884px) {
   .section_project {
-    height: 2600px;
+    height: 3150px;
   }
 }
 
@@ -1878,7 +1878,7 @@ scale: 1 1;
   max-width: 1000px;
   width: 100vw;
   height: 100%;
-  grid-template-rows: 1.2fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
   column-gap: 45px;
@@ -1886,7 +1886,8 @@ scale: 1 1;
   'image_one text_div_one' 
   'text_div_two image_two'
   'image_three text_div_three'
-  'text_div_four image_four';
+  'text_div_four image_four'
+  'image_five text_div_five';
 }
 
 
@@ -2093,7 +2094,7 @@ scale: 1 1;
   display: flex;
   position: relative;
   border: none;
-  top: 13%;
+  top: 16%;
   left: 1%;
   gap: 10px;
   opacity: 0;
@@ -2805,6 +2806,245 @@ scale: 1 1;
 }
 
 
+/* ************************** project 5 ******************** */
+
+.live_five a {
+  text-decoration: none;
+  color: white;
+}
+
+.live_five {
+  position: absolute;
+  font-size: 15px;
+  padding: 5px 10px;
+  background: rgb(150, 169, 81);
+  left: calc(0% + 10rem);
+  top: calc(0% + 17.5rem);
+  z-index: 1;
+}
+
+@media screen and (max-width: 884px) {
+  .live_five {
+    top: calc(0% + 15.6rem);
+    left: calc(0% + 9rem);
+  }
+}
+@media screen and (max-width: 410px) {
+  .live_five {
+    font-size: 14px;
+    top: 15rem;
+    left: 9.3rem;
+
+  }
+}
+
+.live_five:hover {
+  background-color: rgb(55, 103, 92);
+}
+
+.image_five{
+  grid-area: image_five;
+  display: grid;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.image_five img{
+  position: relative;
+  width: 400px;
+  left: calc(0%);
+  top: 5%;
+  border: 10px solid rgb(150, 169, 81);
+}
+
+@media screen and (max-width: 884px) {
+  .image_five img {
+    width: 380px;
+    margin: 0 auto;
+    left: -.5rem;
+  }
+  .image_five {
+    width: 400px;
+    margin: 0 auto;
+    top: calc(0% + 40rem);
+  }
+} 
+@media screen and (max-width: 410px) {
+  .image_five img{
+    width: 343px;
+    margin: 0 auto;
+  }
+}
+
+.btm_line_project_five{
+  position: relative;
+  height: 0;
+  max-width: 430px;
+  min-width: 340px;
+  width: 28vw;
+  top: calc(0% + 6rem);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.473);
+}
+@media screen and (max-width: 884px) {
+  .btm_line_project_five {
+    top: calc(0% + 3.5rem);
+  }
+}
+
+
+.text_div_five {
+  grid-area: text_div_five;
+  position: relative;
+  top: 3%;
+  opacity: 0;
+  width: 35vw;
+  max-width: 400px;
+  min-width: 350px;
+  margin-top: -8rem;
+}
+
+@media screen and (max-width: 884px) {
+  .text_div_five{
+    width: 390px;
+    top: calc(0% + 53rem);
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .text_div_five {
+    width: 350px;
+    padding-left: 2rem;
+  }
+}
+
+
+.text_div_five.show {
+  animation: rightToOriginal 0.5s ease-in forwards;
+}
+
+.text_div_five h1{
+  position: relative;
+  text-align: left;
+  top: calc(0% + 110px);
+  font-size: 30px;
+  opacity: 0;
+}
+
+.text_div_five.show h1 {
+  animation: rightToOriginal 0.5s ease-in 0.8s forwards;
+}
+@media screen and (max-width: 920px) {
+  .text_div_five h1{
+    font-size: 25px;
+
+  }
+}
+@media screen and (max-width: 884px){
+  .text_div_five h1 {
+    font-size: 28px;
+    top: calc(0% + 4rem);
+
+  }
+}
+.who_did_five {
+  position: relative;
+  top: 18.5%;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(234, 132, 114);
+  opacity: 0;
+}
+.text_div_five.show .who_did_five {
+  animation: rightToOriginal 0.5s ease-in 1s forwards;
+}
+@media screen and (max-width: 884px) {
+  .who_did_five {
+    top: 15%;
+  }
+}
+.text_div_five span{
+  position: relative;
+  font-size: 20px;
+  font-weight: 100;
+}
+@media screen and (max-width: 920px) {
+  .text_div_five span{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .text_div_five p{
+    font-size: 14px
+  }
+}
+
+
+.btm_line_project{
+  position: relative;
+  height: 0;
+  max-width: 430px;
+  min-width: 340px;
+  width: 28vw;
+  left: 1%;
+  top: calc(0% + 4rem);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.473);
+}
+
+.p_context_five {
+  position: relative;
+  font-size: 15px;
+  top: 20%;
+  line-height: 1.2em;
+  opacity: 0; 
+  color: rgb(72, 69, 69);
+  width: 400px;
+}
+.text_div_five.show .p_context_five {
+  animation: rightToOriginal 0.5s ease-in 1.2s forwards;
+}
+
+@media screen and (max-width: 920px) {
+  .p_context_five {
+    font-size: 14px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .p_context_five {
+    width: 350px;
+    font-size: 13px !important;
+  }
+}
+
+.used_lang_five {
+  display: flex;
+  position: relative;
+  border: none;
+  top: 19%;
+  gap: 10px;
+  opacity: 0;
+}
+.text_div_five.show .used_lang_five {
+  animation: rightToOriginal 0.5s ease-in 1.4s forwards;
+}
+
+@media screen and (max-width: 884px) {
+  .used_lang_five {
+    margin-top: 1rem;
+  }
+}
+.used_lang_five span{
+  padding-bottom: 3px; padding-left: 4px; padding-right: 4px;
+  font-size: 14px;
+  height: 14px;
+  background-color: rgb(150, 169, 81);
+  color: rgb(254, 254, 252);
+}
+
+
+
+
 
 
 /* ********************* SECTION WEATHER *********************** */
@@ -3381,3 +3621,7 @@ h1 {
 .back_wiki_home:hover {
   color: rgba(82, 80, 80, 0.774);
 }
+
+
+/* --------------- FIREBASE LOG-IN AUTH --------------------- */
+
