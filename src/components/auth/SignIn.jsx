@@ -24,6 +24,8 @@ function SignIn() {
     const [signupPage, setSignupPage] = useState(false)
     const [profilePage, setProfilePage] = useState(false)
 
+
+
     function signIn(e) { // Sign in
         e.preventDefault();
         signInWithEmailAndPassword(auth, signInEmail , signInPassword)
@@ -69,6 +71,9 @@ function SignIn() {
         const listen = onAuthStateChanged(auth, (user) => {
             if (user) {
                 SetAuthUser(user)
+                setProfilePage(true)
+                setLoginPage(false)
+                setSignupPage(false)
             } else {
                 SetAuthUser(null)
             }
@@ -140,12 +145,12 @@ function SignIn() {
                 >Forget Password</p>
             <button className='login_btn' type='submit'>Login</button>
             <button className='google_signin_btn' onClick={signInWithGoogle}><img src={google} alt="google" /> Sign in with Google</button>
-            <p onClick={() => setLoginPage(false)} className='register'>Don't have an account? <span>Register</span></p>
+            <p onClick={() => {setLoginPage(false); setSignupPage(true)}} className='register'>Don't have an account? <span>Register</span></p>
         </form>
       )} {signupPage && (
         <form onSubmit={signUp}>
         <h2>Sign Up</h2>
-        <p onClick={() => setLoginPage(true)} className='already_member'>Already a member? <span>Login</span></p>
+        <p onClick={() => {setSignupPage(false);setLoginPage(true)}} className='already_member'>Already a member? <span>Login</span></p>
         <input className='input_sign_up_email'
             type="email" 
             placeholder='Email' 
