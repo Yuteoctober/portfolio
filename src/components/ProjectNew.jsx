@@ -54,7 +54,7 @@ function ProjectNew() {
       setIsVisible4(true);
     }
     if (inView5) {
-      setIsVisible4(true);
+      setIsVisible5(true);
     }
   }, [inView,inView2,inView3,inView4,inView5]);
 
@@ -169,7 +169,7 @@ function ProjectNew() {
             src={signin} 
             alt="signin" />
           </div>
-          <div className={`text_div_five ${isVisible3? 'show':''}`} ref={ref5}>
+          <div className={`text_div_five ${isVisible5? 'show':''}`} ref={ref5}>
             <h1>User-Authentication</h1>
             <div className='btm_line_project_five'></div>
             <p className="p_context_five">User Authentication system built with React and Firebase. This project caters to a wide array of user needs, providing the functionality to sign in, register new accounts, reset forgotten passwords, and even offers the convenience of Google-based authentication.</p>
