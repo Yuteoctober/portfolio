@@ -50,7 +50,7 @@ function SignIn() {
             setSignUpEmail('')
             setSignUpPassword('')
             setSignupPage(false)
-            setLoginPage(true)
+            setLoginPage(false)
         }).catch((error) => {
             console.log(error)
         })
