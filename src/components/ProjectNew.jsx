@@ -15,6 +15,7 @@ function ProjectNew() {
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
   const [isVisible4, setIsVisible4] = useState(false);
+  const [isVisible5, setIsVisible5] = useState(false);
 
 
   const { ref, inView } = useInView({
@@ -33,6 +34,10 @@ function ProjectNew() {
     triggerOnce: true, 
     threshold: 0.9,
   });
+  const { ref: ref5, inView: inView5 } = useInView({
+    triggerOnce: true, 
+    threshold: 0.9,
+  });
 
  
   useEffect(() => {
@@ -48,7 +53,10 @@ function ProjectNew() {
     if (inView4) {
       setIsVisible4(true);
     }
-  }, [inView,inView2,inView3,inView4]);
+    if (inView5) {
+      setIsVisible4(true);
+    }
+  }, [inView,inView2,inView3,inView4,inView5]);
 
   return (
     <section className="section_project">
@@ -161,7 +169,7 @@ function ProjectNew() {
             src={signin} 
             alt="signin" />
           </div>
-          <div className={`text_div_five ${isVisible3? 'show':''}`} ref={ref3}>
+          <div className={`text_div_five ${isVisible3? 'show':''}`} ref={ref5}>
             <h1>User-Authentication</h1>
             <div className='btm_line_project_five'></div>
             <p className="p_context_five">User Authentication system built with React and Firebase. This project caters to a wide array of user needs, providing the functionality to sign in, register new accounts, reset forgotten passwords, and even offers the convenience of Google-based authentication.</p>
