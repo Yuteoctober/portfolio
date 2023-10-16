@@ -22,7 +22,7 @@ function AboutMe() {
           <div className="grey_bg"></div>    
           <div className={`aboutme_container ${isVisivle? 'show':''}`} ref={ref}>
              <h1 className="head_about_me">ABOUT ME</h1>
-            <p className="about_me_part_one"><span>Front-End</span> Developer driven by a deep passion for crafting engaging digital experiences. My journey in web development has been marked by a relentless pursuit of knowledge and an unwavering commitment to staying at the forefront of industry trends.
+            <p className="about_me_part_one">Front-End Developer driven by a deep passion for crafting engaging digital experiences. My journey in web development has been marked by a relentless pursuit of knowledge and an unwavering commitment to staying at the forefront of industry trends.
               With a solid foundation in core web technologies and a year of hands-on experience,
               I specialize in HTML, CSS, JavaScript, React, and React Hooks.
               </p>

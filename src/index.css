@@ -1404,7 +1404,7 @@ h1, h2, h3, h4, h5, span, p, a {
   animation: Slidefromleft 1s ease-in 0.3s forwards;
 }
 .aboutme_container p {
-  text-indent: 7%;
+  text-indent: 0;
   font-size: 15px;
   color: rgb(255, 255, 255);
   height: 100%;
@@ -1413,19 +1413,18 @@ h1, h2, h3, h4, h5, span, p, a {
   word-spacing: 1.5px;
 }
 
-.about_me_part_one span {
-  font-size: 20px;
-  font-weight: bold;
+
+.aboutme_container .about_me_part_one::first-letter {
+  initial-letter: 3;
+  padding-right: 1rem;
+  color: rgb(255, 254, 254);
 }
 
-.about_me_part_one {
-  opacity: 0;
-  
-}
 .aboutme_container.show .about_me_part_one{
   animation: rightToOriginal 1s ease-in .5s forwards;
 } 
-.about_me_part_two {
+.aboutme_container .about_me_part_two {
+  text-indent: 3%;
   opacity: 0;
 }
 .aboutme_container.show .about_me_part_two{
