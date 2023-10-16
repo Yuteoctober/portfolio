@@ -1416,11 +1416,12 @@ h1, h2, h3, h4, h5, span, p, a {
 
 .aboutme_container .about_me_part_one::first-letter {
   initial-letter: 3;
-  padding-right: 1rem;
+  padding-right: 8px;
   color: rgb(255, 254, 254);
 }
 
 .aboutme_container.show .about_me_part_one{
+  opacity: 0;
   animation: rightToOriginal 1s ease-in .5s forwards;
 } 
 .aboutme_container .about_me_part_two {
