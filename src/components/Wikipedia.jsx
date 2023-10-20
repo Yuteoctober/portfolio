@@ -56,7 +56,6 @@ function Wikipedia() {
     return (
         <>
             <section className='section_wiki'>
-            <Link to='/'><BsFillArrowLeftSquareFill className='back_wiki_home' /></Link>
             <div className="wiki_container">
                 <header>
                     <h1>Wiki Search</h1>

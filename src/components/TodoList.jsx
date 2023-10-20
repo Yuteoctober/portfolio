@@ -99,7 +99,6 @@ function TodoList() {
 
         <>
           <section className='section_three'> 
-          <Link to='/'><BsFillArrowLeftSquareFill className='back_todo_home' /> </Link>
             <div className="container_todo">
                 <div className="container_size">
                     <h1>Todo List</h1>

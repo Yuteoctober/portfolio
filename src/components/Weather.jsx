@@ -44,7 +44,6 @@ function Weather() {
     return (
       <>
         <section className="section_weather" id="section_weather">
-        <Link to='/'><BsFillArrowLeftSquareFill className='back_weather_home' /></Link>
           <div className="search">
             {search?(
             <input 
