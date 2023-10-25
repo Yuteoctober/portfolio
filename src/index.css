@@ -3071,7 +3071,7 @@ scale: 1 1;
 
 .section_weather::before{
   content: '';
-  background: url('./Images/wallpaper.gif') no-repeat center center/cover;
+  background: url('./Images/wallpaper.jpg') no-repeat center center/cover;
   position: absolute;
   opacity: .88;
   width: 100%;
