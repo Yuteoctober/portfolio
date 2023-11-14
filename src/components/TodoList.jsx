@@ -5,7 +5,6 @@ import { BsXLg } from "react-icons/bs";
 import { BsThreeDots } from "react-icons/bs";
 import { BsCheck2 } from "react-icons/bs";
 import { BsXSquare } from "react-icons/bs";
-import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 
 
 
@@ -53,7 +52,7 @@ function TodoList() {
     const handleAddItem = (e) => {
       const newItemValue = newItem.current.value.trim();
     
-      if (newItemValue !== '' && newItemValue !== ' ') {
+      if (newItemValue !== '' && newItemValue !== ' ' && todoItems.length < 9) {
         setTodoItems([...todoItems, newItemValue]); 
         newItem.current.value = null;
       }
