@@ -11,7 +11,7 @@ function Weather() {
     const [data, setData] = useState({})
     const [error, setError] = useState(false)
     const [location, setLocation] = useState('')
-    const [search, setSearch] = useState(false)
+    const [search, setSearch] = useState(true)
     
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=dff99643b887b8942ba45099500548b0`
   
@@ -23,7 +23,6 @@ function Weather() {
        .then((response) => {
         setData(response.data)
         setError(false)
-        setSearch(false)
         console.log(response.data)
         setLocation('')
         }) 
