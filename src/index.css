@@ -3060,6 +3060,7 @@ scale: 1 1;
   color: rgb(255, 255, 255);
   background: rgba(9, 9, 9, 0.2);
   overflow: auto;
+  touch-action: none;
 }
 
 .section_weather a {
